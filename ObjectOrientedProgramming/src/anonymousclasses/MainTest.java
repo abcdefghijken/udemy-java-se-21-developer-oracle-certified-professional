@@ -1,0 +1,23 @@
+package anonymousclasses;
+
+public class MainTest {
+
+    public static void main(String[] args) {
+
+        //Cheetah cheetah = new Cheetah();
+        //cheetah.show("Cheetah",90);
+
+        //Anonymous Class
+        Animals animal = new Animals(){
+
+            @Override
+            public void show(String name, int speed) {
+                System.out.println("A " + name + " can reach speeds of " + speed + " kilometers per hour.");
+            }
+        };
+
+        animal.show("Cheetah",90);
+
+    }
+
+}
